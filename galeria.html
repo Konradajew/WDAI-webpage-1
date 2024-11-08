@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="images/fav.png">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="menu">
+              <a href="index.html">Home</a>
+              <a href="przedmioty.html">Przedmioty</a>
+              <a href="bosowie.html">Bosowie</a>
+              <a href="galeria.html">Galeria</a>
+              <a href="kontakt.html">Kontakt</a>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="media-images">
+        <img src="images/wp1.jpg" alt="Zdjęcie 1" class="media-image">
+        <img src="images/wp2.jpg" alt="Zdjęcie 1" class="media-image">
+        <img src="images/wp3.jpg" alt="Zdjęcie 1" class="media-image">
+        <img src="images/wp4.jpg" alt="Zdjęcie 1" class="media-image">
+    </section>
+
+    <section class="media">
+      <div>
+          <video id="video1" class="media-video" src="mom_video.mp4"></video>
+      </div>
+      <div>
+        <button onclick="play()" class="play-button">Play</button>
+      </div>
+    </section>
+
+
+    <script>
+        var myVideo = document.getElementById("video1");
+        function play()
+        {
+          if (myVideo.paused)
+            myVideo.play();
+          else
+            myVideo.pause();
+        }
+    </script>
+
+    <footer>
+      <div class="bottom-container">
+        <p class="copyright-mark">© 2024 Konrad Szymański.</p>
+      </div>
+    </footer>
+
+</body>
+</html>

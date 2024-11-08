@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strona Główna</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="images/fav.png">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="menu">
+              <a href="index.html">Home</a>
+              <a href="przedmioty.html">Przedmioty</a>
+              <a href="bosowie.html">Bosowie</a>
+              <a href="galeria.html">Galeria</a>
+              <a href="kontakt.html">Kontakt</a>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contact-form-section">
+        <form class="contact-form">
+            <div class="form-group">
+                <label for="email">E-Mail:</label>
+                <input type="text" id="email" name="email" placeholder="Wpisz swój e-mail" required>
+            </div>
+
+            <div class="form-group">
+                <label for="subject">Temat wiadomości:</label>
+                <select id="subject" name="subject" required>
+                    <option value="question">Zapytanie</option>
+                    <option value="feedback">Opinia</option>
+                    <option value="other">Wsparcie Strony</option>
+                    <option value="other">Inne</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Wiadomość:</label>
+                <textarea id="message" name="message" placeholder="Wpisz swoją wiadomość" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Wyślij">
+            </div>
+        </form>
+    </section>
+
+
+    <footer>
+      <div class="bottom-container">
+        <p class="copyright-mark">© 2024 Konrad Szymański.</p>
+      </div>
+    </footer>
+
+</body>
+</html>
